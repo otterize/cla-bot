@@ -17,15 +17,15 @@ export default async function signatureWithPRComment(committerMap: CommitterMap,
     let filteredListOfPRComments = [] as CommittersDetails[]
 
     let hashedCommitters = committers.reduce(function(map, obj) {
-        map[obj.name] = obj;
+        map[obj.id] = obj;
         return map;
     }, {});
 
     prResponse?.data.map((prComment) => {
         listOfPRComments.push({
             name: prComment.user.login,
-            userName: hashedCommitters[name].userName,
-            userEmail: hashedCommitters[name].userEmail,
+            userName: hashedCommitters[prComment.user.id].userName,
+            userEmail: hashedCommitters[prComment.user.id].userEmail,
             id: prComment.user.id,
             comment_id: prComment.id,
             body: prComment.body.trim().toLowerCase(),
