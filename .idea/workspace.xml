@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71681d48-9334-4dfe-bead-7f6c12925451" name="Changes" comment="debug: throw better error message">
-      <change beforePath="$PROJECT_DIR$/src/pullrequest/signatureComment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pullrequest/signatureComment.ts" afterDir="false" />
-    </list>
+    <list default="true" id="71681d48-9334-4dfe-bead-7f6c12925451" name="Changes" comment="debug: throw better error message" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665392346933</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated reference">
+      <created>1665392638280</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665392638280</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +160,8 @@
     <MESSAGE value="debug pat" />
     <MESSAGE value="debug: throw better error message" />
     <MESSAGE value="Updated user name and email" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated user name and email" />
+    <MESSAGE value="Updated reference" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated reference" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
