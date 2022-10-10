@@ -28,8 +28,8 @@ export default async function signatureWithPRComment(committerMap: CommitterMap,
         console.log(prComment)
         listOfPRComments.push({
             name: prComment.user.login,
-            userName: hashedCommitters[prComment.user.id.toString()].userName,
-            userEmail: hashedCommitters[prComment.user.id.toString()].userEmail,
+            userName: hashedCommitters[prComment.user.id.toString()]?.userName,
+            userEmail: hashedCommitters[prComment.user.id.toString()]?.userEmail,
             id: prComment.user.id,
             comment_id: prComment.id,
             body: prComment.body.trim().toLowerCase(),

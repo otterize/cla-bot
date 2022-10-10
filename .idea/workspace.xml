@@ -145,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665393228454</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="debug">
+      <created>1665393411973</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665393411973</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +175,8 @@
     <MESSAGE value="Updated user name and email" />
     <MESSAGE value="Updated reference" />
     <MESSAGE value="debug: throw better error message" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug: throw better error message" />
+    <MESSAGE value="debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
