@@ -73,7 +73,13 @@ function cla(signed: boolean, committerMap: CommitterMap): string {
 
     let you = committersCount > 1 ? `you all` : `you`
     let lineOne = (input.getCustomNotSignedPrComment() || `<br/>Thank you for your submission, we really appreciate it. Like many open-source projects, we ask that $you sign our [Contributor License Agreement](${input.getPathToDocument()}) before we can accept your contribution. You can sign the CLA by just posting a Pull Request Comment same as the below format.<br/>`).replace('$you', you)
+    let missingUsersText = "<br/>The following users have not signed the CLA yet:"
+    committerMap.notSigned.forEach(function (entry) {
+        missingUsersText += `<br/>- GitHub handle: ${entry.name}, Name: ${entry.userName}, Email: ${entry.userEmail}`
+    })
+    missingUsersText += `<br/>For each signing user, we will record the aforementioned data.`
     let text = `**CLA Assistant Lite bot:** ${lineOne}
+   ${missingUsersText}
    - - -
    ${input.getCustomPrSignComment() || "I have read the CLA Document and I hereby sign the CLA"}
    - - -
