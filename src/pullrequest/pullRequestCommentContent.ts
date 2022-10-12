@@ -75,12 +75,12 @@ function cla(signed: boolean, committerMap: CommitterMap): string {
     committerMap.notSigned.forEach(function (entry) {
         missingUsersText += `<br/>- GitHub handle: ${entry.name}, Name: ${entry.userName}, Email: ${entry.userEmail}`
     })
-    missingUsersText += `<br/>For each signing user, we will record the aforementioned data.`
+    missingUsersText += `<br/><br/>For each signing user, we will record the aforementioned data.`
     let text = `**CLA Assistant Lite bot:** ${lineOne}
-   ${missingUsersText}
    - - -
    ${input.getCustomPrSignComment() || "I have read the CLA Document and I hereby sign the CLA"}
    - - -
+   ${missingUsersText}
    `
 
     if (committersCount > 1 && committerMap && committerMap.signed && committerMap.notSigned) {
