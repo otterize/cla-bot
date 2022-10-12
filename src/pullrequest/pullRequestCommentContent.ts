@@ -69,8 +69,8 @@ function cla(signed: boolean, committerMap: CommitterMap): string {
     }
 
 
-    let lineOne = (input.getCustomNotSignedPrComment() || `<br/>Thank you for your submission -- we really appreciate it! Like many open-source projects, we ask that every contributor signs our [Contributor License Agreement (CLA)](${input.getPathToDocument()}) before we can accept their contribution. This is to protect your rights, ours, and those of future users of this software.<br/>Here is the information GitHub has on the contributors of this Pull Request (who have not yet signed this CLA):<br/>`)
-    let missingUsersText = "<br/>The following users have not signed the CLA yet:"
+    let lineOne = (input.getCustomNotSignedPrComment() || `<br/>Thank you for your submission -- we really appreciate it! Like many open-source projects, we ask that every contributor signs our [Contributor License Agreement (CLA)](${input.getPathToDocument()}) before we can accept their contribution. This is to protect your rights, ours, and those of future users of this software.<br/><br/>Here is the information GitHub has on the contributors of this Pull Request (who have not yet signed this CLA):`)
+    let missingUsersText = ""
     committerMap.notSigned.forEach(function (entry) {
         missingUsersText += `<br/>- GitHub handle: ${entry.name}<br/>- Name: ${entry.userName}<br/>- Email: ${entry.userEmail}<br/>`
     })
