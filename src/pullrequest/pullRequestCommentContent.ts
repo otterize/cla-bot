@@ -74,11 +74,11 @@ function cla(signed: boolean, committerMap: CommitterMap): string {
     committerMap.notSigned.forEach(function (entry) {
         missingUsersText += `<br/>- GitHub handle: ${entry.name}<br/>- Name: ${entry.userName}<br/>- Email: ${entry.userEmail}<br/>`
     })
-    missingUsersText += `<br/>To acknowledge that your information above is correct, that we may record it, and that you have read, understood, and agreed to this CLA, please sign the CLA by posting a Pull Request comment below, containing the following exact text:`
+    missingUsersText += `<br/>To acknowledge that your information above is correct, that we may record it, and that you have read, understood, and agreed to this CLA, please sign the CLA by posting a Pull Request Comment below, containing the following exact text:`
     let text = `**CLA Assistant Lite bot:** ${lineOne}
    ${missingUsersText}
    - - -
-   ${input.getCustomPrSignComment() || "I have read the CLA Document and I hereby sign the CLA"}
+   ${input.getCustomPrSignComment() || "I have read the CLA Document and I hereby sign the CLA."}
    - - -
    `
 
