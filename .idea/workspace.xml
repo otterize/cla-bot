@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71681d48-9334-4dfe-bead-7f6c12925451" name="Changes" comment="debug: throw better error message">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pullrequest/pullRequestCommentContent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pullrequest/pullRequestCommentContent.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +211,7 @@
       <workItem from="1657032350635" duration="539000" />
       <workItem from="1657100466538" duration="94000" />
       <workItem from="1658325047254" duration="3955000" />
-      <workItem from="1665598646442" duration="1446000" />
+      <workItem from="1665598646442" duration="1693000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1656581723823</created>
@@ -242,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665598760753</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <created>1665602499870</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665602499871</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +270,8 @@
     <MESSAGE value="debug pat" />
     <MESSAGE value="debug: throw better error message" />
     <MESSAGE value="debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
