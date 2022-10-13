@@ -12,7 +12,7 @@ export async function addEmptyCommit() {
     if (context.payload.comment) {
 
         //Do empty commit only when the contributor signs the CLA with the PR comment 
-        if (context.payload.comment.body === 'I have read the CLA Document and I hereby sign the CLA.') {
+        if (context.payload.comment.body === 'I have read and understood the CLA and hereby agree to its terms by making this Pull Request Comment.') {
             try {
                 const message = input.getSignedCommitMessage() ?
                     input.getSignedCommitMessage().replace('$contributorName', contributorName) :

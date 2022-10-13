@@ -78,7 +78,7 @@ function cla(signed: boolean, committerMap: CommitterMap): string {
     let text = `**CLA Assistant Lite bot:** ${lineOne}
    ${missingUsersText}
    - - -
-   ${input.getCustomPrSignComment() || "I have read the CLA Document and I hereby sign the CLA."}
+   ${input.getCustomPrSignComment() || "I have read and understood the CLA and hereby agree to its terms by making this Pull Request Comment."}
    - - -
    `
 
