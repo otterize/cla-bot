@@ -68,11 +68,17 @@ function cla(signed: boolean, committerMap: CommitterMap): string {
 
     }
 
-    let you = committersCount > 1 ? `you all` : `you`
-    let lineOne = (input.getCustomNotSignedPrComment() || `<br/>Thank you for your submission, we really appreciate it. Like many open-source projects, we ask that $you sign our [Contributor License Agreement](${input.getPathToDocument()}) before we can accept your contribution. You can sign the CLA by just posting a Pull Request Comment same as the below format.<br/>`).replace('$you', you)
+
+    let lineOne = (input.getCustomNotSignedPrComment() || `<br/>Thank you for your submission -- we really appreciate it! Like many open-source projects, we ask that every contributor signs our [Contributor License Agreement (CLA)](${input.getPathToDocument()}) before we can accept their contribution. This is to protect your rights, ours, and those of future users of this software.<br/><br/>Here is the information GitHub has on the contributors of this Pull Request (who have not yet signed this CLA):`)
+    let missingUsersText = ""
+    committerMap.notSigned.forEach(function (entry) {
+        missingUsersText += `<br/>- GitHub handle: ${entry.name}<br/>- Name: ${entry.userName}<br/>- Email: ${entry.userEmail}<br/>`
+    })
+    missingUsersText += `<br/>To acknowledge that your information above is correct, that we may record it, and that you have read, understood, and agreed to this CLA, please sign the CLA by posting a Pull Request Comment below, containing the following exact text:`
     let text = `**CLA Assistant Lite bot:** ${lineOne}
+   ${missingUsersText}
    - - -
-   ${input.getCustomPrSignComment() || "I have read the CLA Document and I hereby sign the CLA"}
+   ${input.getCustomPrSignComment() || "I have read and understood the CLA and hereby agree to its terms by making this Pull Request Comment."}
    - - -
    `
 
