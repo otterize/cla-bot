@@ -8,6 +8,11 @@ on:
       event-name:
         required: true
         type: string
+    secrets:
+      GITHUB_TOKEN:
+        required: true
+      PERSONAL_ACCESS_TOKEN:
+        required: true
 
 jobs:
   CLAssistant:

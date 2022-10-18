@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71681d48-9334-4dfe-bead-7f6c12925451" name="Changes" comment="debug: throw better error message">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/cla.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +219,7 @@
       <workItem from="1657032350635" duration="539000" />
       <workItem from="1657100466538" duration="94000" />
       <workItem from="1658325047254" duration="3955000" />
-      <workItem from="1665923842730" duration="2038000" />
+      <workItem from="1665923842730" duration="2674000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1656581723823</created>
@@ -243,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656584277181</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added reusable workflow">
+      <created>1666090334461</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666090334461</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +270,8 @@
     <MESSAGE value="test commit" />
     <MESSAGE value="debug pat" />
     <MESSAGE value="debug: throw better error message" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug: throw better error message" />
+    <MESSAGE value="Added reusable workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added reusable workflow" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
