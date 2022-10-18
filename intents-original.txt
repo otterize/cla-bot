@@ -1,0 +1,4 @@
+client in namespace otterize-tutorial-mapper calls:
+  - server
+client2 in namespace otterize-tutorial-mapper calls:
+  - server
