@@ -15,7 +15,6 @@ on:
 jobs:
   CLAssistant:
     runs-on: ubuntu-latest
-    secrets: inherit
     steps:
       - name: "CLA Assistant"
         if: (${{ inputs.comment-body }} == 'recheck' || ${{ inputs.comment-body }} == 'I have read and understood the CLA and hereby agree to its terms by making this Pull Request Comment.') || ${{ inputs.event-name }} == 'pull_request_target'

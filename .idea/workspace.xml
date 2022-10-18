@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71681d48-9334-4dfe-bead-7f6c12925451" name="Changes" comment="debug: throw better error message">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="71681d48-9334-4dfe-bead-7f6c12925451" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/cla.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cla.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +219,7 @@
       <workItem from="1657032350635" duration="539000" />
       <workItem from="1657100466538" duration="94000" />
       <workItem from="1658325047254" duration="3955000" />
-      <workItem from="1665923842730" duration="2674000" />
+      <workItem from="1665923842730" duration="3025000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1656581723823</created>
@@ -249,7 +249,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666090334461</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated workflow to require secretes">
+      <created>1666091121770</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666091121770</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated workflow secretes">
+      <created>1666091185802</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666091185803</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +285,9 @@
     <MESSAGE value="debug pat" />
     <MESSAGE value="debug: throw better error message" />
     <MESSAGE value="Added reusable workflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added reusable workflow" />
+    <MESSAGE value="Updated workflow to require secretes" />
+    <MESSAGE value="Updated workflow secretes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated workflow secretes" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
