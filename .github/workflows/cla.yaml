@@ -19,7 +19,7 @@ jobs:
       - name: "CLA Assistant"
         if: (${{ inputs.comment-body }} == 'recheck' || ${{ inputs.comment-body }} == 'I have read and understood the CLA and hereby agree to its terms by making this Pull Request Comment.') || ${{ inputs.event-name }} == 'pull_request_target'
         # Beta Release
-        uses: tomergreenwald/cla@v2.4.9
+        uses: tomergreenwald/cla@v2.2.1-otterize
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # the below token should have repo scope and must be manually added by you in the repository's secret
