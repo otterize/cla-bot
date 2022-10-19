@@ -19,7 +19,7 @@ jobs:
       - name: "CLA Assistant"
         if: (${{ inputs.comment-body }} == 'recheck' || ${{ inputs.comment-body }} == 'I have read and understood the CLA and hereby agree to its terms by making this Pull Request Comment.') || ${{ inputs.event-name }} == 'pull_request_target'
         # Beta Release
-        uses: tomergreenwald/cla@v2.2.1-otterize
+        uses: otterize/cla-bot@v2.2.1-otterize
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # the below token should have repo scope and must be manually added by you in the repository's secret
@@ -29,7 +29,7 @@ jobs:
           path-to-document: 'https://github.com/otterize/cla/blob/main/otterize-individual-cla-v1.0.mdx' # e.g. a CLA or a DCO document
           # branch should not be protected
           branch: 'main'
-          allowlist: amit7itz,amitlicht,evyatarmeged,NetanelBollag,omris94,orishoshan,usarid # otterize team
+          allowlist: amit7itz,amitlicht,evyatarmeged,NetanelBollag,omris94,orishoshan,usarid,dependabot # otterize team
           #below are the optional inputs - If the optional inputs are not given, then default values will be taken
 
           #remote-organization-name: enter the remote organization name where the signatures should be stored (Default is storing the signatures in the same repository)
