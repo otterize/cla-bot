@@ -26,7 +26,7 @@ jobs:
           PERSONAL_ACCESS_TOKEN : ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         with:
           path-to-signatures: 'signatures/version1/cla.json'
-          path-to-document: 'https://github.com/otterize/cla/blob/main/otterize-individual-cla-v1.0.mdx' # e.g. a CLA or a DCO document
+          path-to-document: 'https://github.com/otterize/cla/blob/main/otterize-individual-cla-v1.0.md' # e.g. a CLA or a DCO document
           # branch should not be protected
           branch: 'main'
           allowlist: orishavit,rotembm12,shaharbero,amitlicht,evyatarmeged,NetanelBollag,omris94,orishoshan,yard2010,sapirwo,otterizebot,dependabot[bot],otterobert,bglynn # otterize team
